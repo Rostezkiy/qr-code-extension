@@ -2,7 +2,6 @@
 
 A lightweight Chrome extension that generates high‑quality QR codes (1000×1000 px) for the current page URL or any custom text. Copy the QR image to clipboard or download it as a PNG with a single click.
 
-![Extension screenshot](https://via.placeholder.com/350x200/0b7dda/ffffff?text=QR+Generator+Preview)
 
 ## ✨ Features
 
@@ -24,11 +23,11 @@ A lightweight Chrome extension that generates high‑quality QR codes (1000×100
 
 1. **Download or clone** this repository:
    ```bash
-   git clone https://github.com/your‑username/qr‑chrome.git
+   git clone https://github.com/Rostezkiy/qr-code-extension.git
    ```
 2. Open **Chrome** and navigate to `chrome://extensions/`.
 3. Enable **Developer mode** (toggle in the top‑right corner).
-4. Click **Load unpacked** and select the folder containing the extension files (`manifest.json`, `popup.html`, etc.).
+4. Click **Load unpacked** and select the **folder** containing the extension files (`manifest.json`, `popup.html`, etc.).
 5. The extension icon will appear in your toolbar; pin it for quick access.
 
 ## 🛠 How to Use
