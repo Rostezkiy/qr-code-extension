@@ -84,11 +84,6 @@ If you want to modify the extension:
 
 The project uses no build system; all files are plain HTML/JS. You can replace `qrcode.min.js` with a newer version from [qrcodejs](https://github.com/davidshimjs/qrcodejs) if needed.
 
-## 📄 License
-
-This project is licensed under the **MIT License**.  
-See the [LICENSE](LICENSE) file for details.
-
 ## 🤝 Contributing
 
 Contributions are welcome! Feel free to open an issue or submit a pull request.
