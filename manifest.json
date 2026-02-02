@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "QR Generator",
+  "version": "1.0",
+  "description": "Generates a high quality (1000px) QR code of the current page.",
+  "permissions": [
+    "activeTab"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Create a QR code"
+  }
+}

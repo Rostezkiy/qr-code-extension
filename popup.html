@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 320px;
+      font-family: sans-serif;
+      padding: 15px;
+      text-align: center;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h3 {
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+
+    #text-input {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      resize: vertical;
+      font-family: monospace;
+      font-size: 12px;
+      margin-bottom: 10px;
+      min-height: 60px;
+    }
+    #text-input:focus {
+      outline: none;
+      border-color: #2196F3;
+    }
+
+    #qrcode-container {
+      margin: 0 auto 15px auto;
+      border: 1px solid #ddd;
+      background: white;
+      padding: 10px;
+      border-radius: 8px;
+      min-height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #qrcode-container canvas,
+    #qrcode-container img {
+      width: 250px !important;
+      height: auto !important;
+      display: block;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    button {
+      flex: 1;
+      padding: 10px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.2s;
+      color: white;
+      font-size: 14px;
+    }
+
+    #btn-copy { background-color: #2196F3; }
+    #btn-copy:hover { background-color: #0b7dda; }
+
+    #btn-download { background-color: #4CAF50; }
+    #btn-download:hover { background-color: #45a049; }
+
+    #status {
+      margin-top: 10px;
+      font-size: 12px;
+      color: #666;
+      height: 15px;
+    }
+  </style>
+</head>
+<body>
+  <h3>QR Generator</h3>
+  <textarea id="text-input" placeholder="Input text or URL..."></textarea>
+  <div id="qrcode-container"></div>
+  <div class="btn-group">
+    <button id="btn-copy">Copy</button>
+    <button id="btn-download">Download</button>
+  </div>
+  <div id="status"></div>
+  <script src="qrcode.min.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
